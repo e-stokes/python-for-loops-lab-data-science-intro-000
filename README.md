@@ -74,7 +74,10 @@ Your task is to assign the variable `names_and_ranks` to a list, with each eleme
 
 
 ```python
-names_and_ranks = [] 
+names_and_ranks = []
+for index in city_indices:
+    names_and_ranks.append(f"{index + 1}. {city_names[index]}")
+names_and_ranks
 # write a for loop that adds the properly formatted string to the names_and_ranks list
 ```
 
@@ -90,6 +93,9 @@ Ok, now let's create a new variable called `city_populations`.  Use a `for` loop
 
 ```python
 city_populations = []
+for city in cites:
+    city_populations.append(city['Population'])
+city_populations
 ```
 
 
@@ -122,6 +128,9 @@ Now we want declare a variable called `city_areas` that points to a list of all 
 
 ```python
 city_areas = []
+for city in cities:
+    city_areas.append(city['Area'])
+city_areas
 ```
 
 
